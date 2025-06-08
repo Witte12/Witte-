@@ -20,7 +20,7 @@
 
 ## Контакты
 
-Telegram: [@witte_n1](https://t.me/witte_n1)
+Telegram: [@witte_n1](https://t.me/witte_reseller)
 
 ---
 
