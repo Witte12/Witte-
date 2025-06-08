@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WITTE N1 — Продажа PUBG Mobile аккаунтов</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; color: #222; margin: 0; padding: 0; }
+    .container { max-width: 900px; margin: auto; padding: 20px; }
+    h1, h2 { color: #007bff; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    .button, a.button {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      text-decoration: none;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    ul, ol { padding-left: 20px; }
+    footer { margin-top: 40px; font-size: 0.9em; color: #555; text-align: center; }
+    #cart-section { display: none; margin-top: 30px; background: #fff; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+    .nav-links { margin-bottom: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .logo-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .logo-container img {
+      display: block;
+      margin: 0 auto;
+    }
+    .logo-w { height: 60px; }
+    .logo-uc { height: 40px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="logo-container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Letter_W.svg" alt="W Logo" class="logo-w" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/UC_currency_icon.png" alt="UC Logo" class="logo-uc" />
+      <h1>WITTE N1 — PUBG Mobile</h1>
+    </div>
+
+    <p>Профессиональный реселлер и гарант. Работаю 3+ года. Безопасные сделки, честные аккаунты, отзывчивая поддержка.</p>
+
+    <div class="nav-links">
+      <a class="button" href="reviews.html">📝 Отзывы</a>
+      <a class="button" href="ucshop.html">💰 UC SHOP</a>
+      <button class="button" onclick="document.getElementById('cart-section').style.display='block'">🛒 Корзина</button>
+    </div>
+
+    <h2>🔥 Доступные аккаунты</h2>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Описание</th>
+        <th>Цена</th>
+        <th>Действие</th>
+      </tr>
+      <tr>
+        <td>#001</td>
+        <td>Lvl 65 | Conqueror | M416 Glacier</td>
+        <td>300 ₽</td>
+        <td><button class="button" onclick="addToCart('#001', 'Lvl 65 | Conqueror | M416 Glacier', '300 ₽')">🛒 В корзину</button></td>
+      </tr>
+      <tr>
+        <td>#002</td>
+        <td>Lvl 71 | Ace | Max RP</td>
+        <td>500 ₽</td>
+        <td><button class="button" onclick="addToCart('#002', 'Lvl 71 | Ace | Max RP', '500 ₽')">🛒 В корзину</button></td>
+      </tr>
+    </table>
+
+    <div id="cart-section">
+      <h2>🛒 Ваша корзина</h2>
+      <ul id="cart-list"></ul>
+      <p><strong>Связаться для оформления заказа:</strong> <a href="https://t.me/witte_n1" target="_blank">@witte_n1</a></p>
+    </div>
+
+    <h2>✅ Почему выбирают меня?</h2>
+    <ul>
+      <li>🔒 Сделки через гаранта</li>
+      <li>📲 Только проверенные аккаунты</li>
+      <li>💬 Быстрая поддержка</li>
+      <li>💳 Удобные способы оплаты (Qiwi, карта, крипта)</li>
+    </ul>
+
+    <h2>📦 Как купить?</h2>
+    <ol>
+      <li>Выбираешь аккаунт</li>
+      <li>Добавляешь в корзину</li>
+      <li>Переходишь к заказу и пишешь в Telegram</li>
+    </ol>
+
+    <h2>📞 Контакты</h2>
+    <p>Telegram: <a href="https://t.me/witte_n1" target="_blank">@witte_n1</a><br />
+       Резерв: <a href="https://t.me/wittemarket_bot" target="_blank">@wittemarket_bot</a></p>
+
+    <footer>&copy; 2025 WITTE N1. Все права защищены.</footer>
+  </div>
+
+  <script>
+    const cartList = document.getElementById('cart-list');
+    function addToCart(id, desc, price) {
+      const li = document.createElement('li');
+      li.textContent = `${id} — ${desc} (${price})`;
+      cartList.appendChild(li);
+    }
+  </script>
+</body>
+</html>
