@@ -33,7 +33,7 @@
       display: block;
       margin: 0 auto;
     }
-    .logo-w { height: 60px; }
+    .logo-w { width: 100px; border-radius: 5px; }
     .logo-uc { height: 40px; margin-top: 10px; }
   </style>
 </head>
@@ -41,8 +41,7 @@
   <div class="container">
 
     <div class="logo-container">
-      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftoplogos.ru%2Flogo-pubg%2F&psig=AOvVaw3NOVsC6CdkUyDwtT4mjixg&ust=1749498106846000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjG07vK4o0DFQAAAAAdAAAAABAE" alt="W Logo" class="logo-w" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/UC_currency_icon.png" alt="UC Logo" class="logo-uc" />
+      <img src="logo.jpg" alt="W Logo" class="logo-w" />
       <h1>WITTE STORE — PUBG Mobile</h1>
     </div>
 
@@ -55,30 +54,36 @@
     </div>
 
     <h2>🔥 Доступные аккаунты</h2>
-    <table>
-      <tr>
-        <th>ID</th>
-        <th>Описание</th>
-        <th>Цена</th>
-        <th>Действие</th>
-      </tr>
-      <tr>
-        <td>#001</td>
-        <td>Lvl 65 | Conqueror | M416 Glacier</td>
-        <td>600 грн</td>
-        <td><button class="button" onclick="addToCart('#001', 'Lvl 65 | Conqueror | M416 Glacier', '600 грн')">🛒 В корзину</button></td>
-      </tr>
-      <tr>
-        <td>#002</td>
-        <td>Lvl 71 | Ace | Max RP</td>
-        <td>1000 грн</td>
-        <td><button class="button" onclick="addToCart('#002', 'Lvl 71 | Ace | Max RP', '1000 грн')">🛒 В корзину</button></td>
-      </tr>
-    </table>
+<table>
+  <tr>
+    <th>Фото</th>
+    <th>Описание</th>
+    <th>Цена</th>
+    <th>Действие</th>
+  </tr>
+  <tr>
+    <a href="ак 15500грн.jpg" target="_blank"></a>
+    <td><img src="ак 15500грн.jpg" alt="Аккаунт 1"style="width: 300px; border-radius: 10px;"></td>
+    <td>Lvl 79 | Фул оброз в tg колекция 64| M416 Glacier 7lv</td>
+    <td>15500 грн</td>
+    <td><button class="button" onclick="addToCart('id:5623842498', 'Lvl 79 | Фул оброз в tg колекция 64  | M416 Glacier 7lv', '15500 грн')">🛒 В корзину</button></td>
+  </tr>
+  <tr>
+    <td><img src="ак 2200грн.jpg" alt="Аккаунт 2 "style="width: 300px; border-radius: 10px;"></td>
+    <td>Lvl скрит |  Фул гарантия оброз в tg | OLD Вещи</td>
+    <td>2200 грн</td>
+    <td><button class="button" onclick="addToCart('#id нет', 'Lvl нет | Фул гарантия оброз в tg | OLD вещи', '2200 грн')">🛒 В корзину</button></td>
+  </tr>
+  <td><img src="ак 3300грн.jpg" alt="Аккаунт 2 "style="width: 300px; border-radius: 10px;"></td>
+    <td>Lvl скрит |  Фул гарантия оброз в tg | M416 Glacier 7lv</td>
+    <td>3300 грн</td>
+    <td><button class="button" onclick="addToCart('#id нет', 'Lvl нет | Фул гарантия оброз в tg | M416 Glacier 6lv', '3300 грн')">🛒 В корзину</button></td>
+  </tr>
+</table>
 
     <div id="cart-section">
   <h2>🛒 Ваша корзина</h2>
-  <img src="1.png" alt="Фото корзины" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+ 
   <ul id="cart-list"></ul>
   <p><strong>Связаться для оформления заказа:</strong> <a href="https://t.me/witte_reseller" target="_blank">@witte_reseller</a></p>
 </div>
