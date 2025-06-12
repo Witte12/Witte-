@@ -1,4 +1,4 @@
-# WITTE N1 — PUBG Mobile аккаунты и UC Shop
+# WITTE STORE — PUBG Mobile аккаунты и UC Shop
 
 Добро пожаловать на официальный сайт WITTE N1!
 
